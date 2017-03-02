@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Gracius" />
+		<Option execution_dir="../Release" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../Release/Gracius" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../Release/Gracius" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="include" />
+			<Add directory="C:/SFML-2.3.1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="C:/SFML-2.3.1/lib" />
+		</Linker>
+		<Unit filename="include/Bullet.h" />
+		<Unit filename="include/EffectManager.h" />
+		<Unit filename="include/Enemy.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/GameObject.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/Ship.h" />
+		<Unit filename="include/utility.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Bullet.cpp" />
+		<Unit filename="src/EffectManager.cpp" />
+		<Unit filename="src/Enemy.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/GameObject.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Ship.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
